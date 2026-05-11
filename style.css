@@ -437,19 +437,19 @@ body{
         flex-wrap: wrap;
     }
 
-    .mySkill_title,
-    .myProjects_title,
-    .contact h2,
-    .aboutMe_content h2{
-        
+
+    #skill,
+    .myProjects{
+        height: auto;
     }
 
-    #skill {
-        height: auto;
+    .myProjects_title {
+        margin-top: 20px;
     }
 
     .project {
         width: 300px;
+        margin-bottom: 25px;
     }
 
     .aboutMe
