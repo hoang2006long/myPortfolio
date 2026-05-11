@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Font Awesome để dùng icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Hoàng Long | Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header & Navigation -->
+        <div class="header">
+            <div class="nav">
+                <a href="#home" class="nav_item active">Home</a>
+                <a href="#skill" class="nav_item">Skill</a>
+                <a href="#project" class="nav_item">Project</a>
+                <a href="#about" class="nav_item">About me</a>
+                <a href="#contact" class="nav_item">Contact</a>
+            </div>
+        </div>
+
+        <!-- Main Body -->
+        <div class="body">
+            
+            <!-- Hero Banner Section -->
+            <div id="home" class="heroBanner">
+                <h1>Xin chào, tôi là <span class="highlight">Hoàng Long</span></h1>
+            </div>
+
+            <!-- Skills Section -->
+            <div id="skill" class="mySkill">
+                <div class="mySkill_title">My Skills</div>
+                <div class="mySkill_body">
+                    <div class="mySkill_body_element">
+                        <div class="skillElement_title"><i class="fa-solid fa-microchip"></i> Embedded</div>
+                        <div class="skillElement_body">
+                            <ul>
+                                <li>C/C++</li>
+                                <li>Atemega328p (Arduino Framework)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mySkill_body_element">
+                        <div class="skillElement_title"><i class="fa-solid fa-laptop-code"></i> Application Software</div>
+                        <div class="skillElement_body">
+                            <ul>
+                                <li>Kicad</li>
+                                <li>Autocad</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mySkill_body_element">
+                        <div class="skillElement_title"><i class="fa-solid fa-computer"></i>Communication Protocols</div>
+                        <div class="skillElement_body">
+                            <ul>
+                                <li>UART</li>
+                                <li>I2C</li>
+                                <li>SPI</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div id="project" class="myProjects">
+                     <a href="https://google.com" style="text-decoration: none; color: inherit;">
+                        <div class="myProjects_title">My Projects</div>
+                        <div class="myProjects_body">
+                            <!-- Ví dụ 1 Project -->
+                            <div class="project">
+                                <div class="project_img">
+                                    <!-- Chèn ảnh demo project vào đây -->
+                                </div>
+                                <div class="project_content">
+                                    <h3>Hệ thống điều khiển nhúng</h3>
+                                    <p>Mô tả ngắn gọn về dự án của bạn, công nghệ sử dụng.</p>
+                                </div>
+                                <div class="project_button">
+                                    Xem chi tiết
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                 </div>
+
+            <!-- About Me Section -->
+            <div id="about" class="aboutMe">
+                <div class="aboutMe_title">
+                    <h2>Về tôi</h2>
+        <p>Tôi là một lập trình viên đam mê công nghệ nhúng và phát triển phần mềm...</p>
+                </div>
+    <div class="aboutMe_content">
+        <div class="aboutMe_img">
+        <img src="/aboutme_img/z7814084012219_fda5036af7b2103e87985e4a1c8b57d9.jpg" alt="Hoàng Long - Portrait">
+    </div>
+        <div class="aboutMe_section">
+            
+                <div class="aboutMe_sectionElement">
+                    <p>Bảng điểm học tập</p>
+                    <a href="./aboutme_img/Bảng điểm Trương Lê Hoàng Long.pdf" download="./aboutme_img/Bảng điểm Trương Lê Hoàng Long.pdf" class="transcript-download">
+                        <img src="./aboutme_img/GPA.jpg" alt="Download Transcript" title="Click để tải bảng điểm">
+                        <div class="overlay">
+                            <i class="fa-solid fa-download"></i> Tải xuống
+                        </div>
+                    </a>
+                </div>
+
+                <div class="aboutMe_sectionElement">
+                    <p>Giấy chứng nhận Olympic cấp trường</p>
+                    <a href="./aboutme_img/Giấy khen Olympic Tiếng Anh.jpg" download="./aboutme_img/Giấy khen Olympic Tiếng Anh.jpg" class="transcript-download">
+                        <img src="./aboutme_img/Giấy khen Olympic Tiếng Anh.jpg" alt="Download Transcript" title="Click để tải bảng điểm">
+                        <div class="overlay">
+                            <i class="fa-solid fa-download"></i> Tải xuống 
+                        </div>
+                    </a>
+                </div>
+
+                <div class="aboutMe_sectionElement">
+                    <p>Chứng chỉ MOS excel</p>
+                    <a href="./aboutme_img/Excel Associate.pdf" download="./aboutme_img/Excel Associate.pdf" class="transcript-download">
+                        <img src="./aboutme_img/Excel.jpg" alt="Download Transcript" title="Click để tải bảng điểm">
+                        <div class="overlay">
+                            <i class="fa-solid fa-download"></i> Tải xuống 
+                        </div>
+                    </a>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+            <!-- Contact Section -->
+            <div id="contact" class="contact">
+                <h2>Liên hệ với tôi</h2>
+                <div class="social_icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2026 Made by Hoàng Long</p>
+        </div>
+    </div>
+
+    <!-- Script file -->
+    <script src="main.js"></script>
+</body>
+</html>

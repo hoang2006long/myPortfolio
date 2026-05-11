@@ -1,0 +1,405 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fb;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Container */
+.container{
+    width: 100%;
+}
+
+/* HEADER */
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.nav_item{
+    text-decoration: none;
+    color: #334155;
+    font-weight: 500;
+    transition: 0.3s;
+    position: relative;
+}
+
+.nav_item:hover,
+.nav_item.active{
+    color: #2563eb;
+}
+
+.nav_item::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: #2563eb;
+    transition: 0.3s;
+}
+
+.nav_item:hover::after{
+    width: 100%;
+}
+
+/* BODY */
+.body{
+    margin-top: 80px;
+}
+
+/* HERO */
+.heroBanner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg,#dbeafe,#eff6ff,#f0f9ff);
+    padding: 20px;
+}
+
+.heroBanner h1{
+    font-size: 60px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.highlight{
+    color: #2563eb;
+}
+
+/* SECTION */
+.mySkill,
+.myProjects,
+.aboutMe,
+.contact{
+    max-width: 1200px;
+    margin: auto;
+    padding: 90px 20px;
+}
+
+.myProjects:hover {
+    cursor: pointer;
+}
+
+/* TITLES */
+.mySkill_title,
+.myProjects_title,
+.contact h2,
+.aboutMe_content h2{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 50px;
+    color: #2563eb;
+    font-weight: 700;
+}
+
+/* SKILLS */
+.mySkill_body{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mySkill_body_element{
+    width: 320px;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.3s;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.mySkill_body_element:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(37,99,235,0.15);
+}
+
+.skillElement_title{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: #2563eb;
+}
+
+.skillElement_title i{
+    margin-right: 10px;
+}
+
+.skillElement_body ul{
+    padding-left: 20px;
+}
+
+.skillElement_body li{
+    margin-bottom: 10px;
+}
+
+/* PROJECTS */
+.myProjects_body{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project{
+    width: 350px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.project:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(37,99,235,0.15);
+}
+
+.project_img{
+    height: 220px;
+    background: linear-gradient(135deg,#93c5fd,#bfdbfe);
+}
+
+.project_content{
+    padding: 25px;
+}
+
+.project_content h3{
+    margin-bottom: 12px;
+    color: #2563eb;
+}
+
+
+.project_button{
+    display: inline-block;
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+
+.project_button a:hover{
+    background: #1d4ed8;
+}
+
+/* ABOUT ME */
+.aboutMe{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.aboutMe_img img:hover {
+     opacity: 1;
+     cursor: pointer;
+}
+
+.aboutMe_img img{
+    width: 320px;
+    border-radius: 25px;
+    object-fit: cover;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    opacity: 0.9;
+    margin-right: 20px;
+}
+
+.aboutMe_content{
+    display: flex;
+}
+
+.aboutMe h2{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #2563eb;
+    font-weight: 700;
+}
+
+.aboutMe p{
+    font-size: 17px;
+    color: #475569;
+}
+
+/* CERTIFICATE */
+.aboutMe_section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: center;
+}
+
+.aboutMe_sectionElement{
+    width: 220px;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.aboutMe_sectionElement p{
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #6679b7;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+}
+
+.transcript-download{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.transcript-download img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.transcript-download:hover img{
+    transform: scale(1.08);
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(37,99,235,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    opacity: 0;
+    transition: 0.3s;
+    text-align: center;
+    padding: 10px;
+}
+
+.aboutMe_sectionElement:hover .overlay{
+    opacity: 1;
+}
+
+/* CONTACT */
+.contact{
+    text-align: center;
+}
+
+.social_icons{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social_icons a{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 28px;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.social_icons a:hover{
+    background: #2563eb;
+    color: white;
+    transform: translateY(-8px);
+}
+
+/* FOOTER */
+.footer{
+    text-align: center;
+    padding: 25px;
+    background: white;
+    color: #64748b;
+    margin-top: 40px;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1100px){
+
+    .heroBanner h1{
+        font-size: 38px;
+    }
+
+    .nav{
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .mySkill_title,
+    .myProjects_title,
+    .contact h2,
+    .aboutMe_content h2{
+        font-size: 34px;
+    }
+
+    .aboutMe
+    .aboutMe_content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutMe_img img{
+        width: 260px;
+    }
+
+    .aboutMe_section{
+        justify-content: center;
+    }
+
+    .mySkill_body_element,
+    .project{
+        width: 100%;
+    }
+}
