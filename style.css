@@ -12,6 +12,10 @@ html{
     scroll-behavior: smooth;
 }
 
+html {
+    font-size: 62.5%; 
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     background: #f4f7fb;
@@ -43,6 +47,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 35px;
+    font-size: 1.6rem;
 }
 
 .nav_item{
@@ -82,6 +87,7 @@ body{
 .heroBanner{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -90,9 +96,13 @@ body{
 }
 
 .heroBanner h1{
-    font-size: 60px;
+    font-size: 5rem;
     font-weight: 700;
     color: #0f172a;
+}
+.heroBanner h2 {
+    margin-top: 15px;
+    font-size: 2rem;
 }
 
 .highlight{
@@ -119,7 +129,7 @@ body{
 .contact h2,
 .aboutMe_content h2{
     text-align: center;
-    font-size: 42px;
+    font-size: 4rem;
     margin-bottom: 50px;
     color: #2563eb;
     font-weight: 700;
@@ -152,7 +162,7 @@ body{
 }
 
 .skillElement_title{
-    font-size: 22px;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 18px;
     color: #2563eb;
@@ -164,6 +174,7 @@ body{
 
 .skillElement_body ul{
     padding-left: 20px;
+    font-size: 1.6rem;
 }
 
 .skillElement_body li{
@@ -208,11 +219,13 @@ body{
 
 .project_content{
     padding: 25px;
+    font-size: 1.6rem;
 }
 
 .project_content h3{
     margin-bottom: 12px;
     color: #2563eb;
+    font-size: 1.6rem;
 }
 
 
@@ -226,6 +239,7 @@ body{
     font-weight: 500;
     text-align: center;
     margin: 15px 35px;
+    font-size: 1.6rem;
 }
 
 .project_button a:hover{
@@ -235,9 +249,8 @@ body{
 /* ABOUT ME */
 .aboutMe{
     display: flex;
-    gap:20px;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
     flex-wrap: wrap;
     flex-direction: column;
 }
@@ -263,14 +276,14 @@ body{
 
 .aboutMe h2{
     text-align: center;
-    font-size: 42px;
+    font-size: 3.5rem;
     margin-bottom: 20px;
     color: #2563eb;
     font-weight: 700;
 }
 
 .aboutMe p{
-    font-size: 17px;
+    font-size: 1.7rem;
     color: #475569;
 }
 
@@ -366,8 +379,8 @@ body{
 }
 
 .contactElement a i{
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: white;
     display: flex;
@@ -375,7 +388,7 @@ body{
     align-items: center;
     text-decoration: none;
     color: #2563eb;
-    font-size: 28px;
+    font-size: 2rem;
     transition: 0.3s;
     box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
@@ -391,6 +404,7 @@ body{
     margin-left: 20px;
     align-self: center;
     color: #304e91;
+    font-size: 1.6rem;
 }
 
 .contactElement a:hover span {
@@ -404,13 +418,18 @@ body{
     background: white;
     color: #64748b;
     border-top: 1px solid #e2e8f0;
+    font-size: 1.4rem;
 }
 
 /* RESPONSIVE */
 @media screen and (max-width: 1100px){
 
+    html {
+    font-size: 55%; 
+  }
+
     .heroBanner h1{
-        font-size: 38px;
+        
     }
 
     .nav{
@@ -422,7 +441,11 @@ body{
     .myProjects_title,
     .contact h2,
     .aboutMe_content h2{
-        font-size: 34px;
+        
+    }
+
+    #skill {
+        height: auto;
     }
 
     .aboutMe
@@ -440,8 +463,7 @@ body{
         justify-content: center;
     }
 
-    .mySkill_body_element,
-    .project{
-        width: 100%;
-    }
+   
+
+   
 }
