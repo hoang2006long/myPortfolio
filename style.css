@@ -547,8 +547,8 @@ body{
     }
 
    .contactElement a {
-    width: 350px;
-   }
+        width: 250px;
+    }
 
    .contactElement a i {
         width: 30px;
