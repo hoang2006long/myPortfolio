@@ -108,6 +108,7 @@ body{
 .heroBanner h2 {
     margin-top: 15px;
     font-size: 2rem;
+    font-family: sans-serif;
 }
 
 .highlight{
@@ -231,6 +232,7 @@ body{
     margin-bottom: 12px;
     color: #2563eb;
     font-size: 1.6rem;
+    font-family: sans-serif;
 }
 
 

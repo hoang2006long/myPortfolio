@@ -1,19 +1,28 @@
 let lastScrollTop = 0;
 const navbar = document.querySelector('.header');
 const btnElement = document.querySelector('.scroll_top_Btn'); 
+const revealElements = document.querySelectorAll('.reveal'); // Chọn sẵn danh sách để dùng cho việc reset
 
 window.addEventListener('scroll', function() {
-    // Lấy giá trị cuộn trang hiện tại
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-    // 1. LOGIC CHO NAVBAR (Ẩn khi cuộn xuống, hiện khi cuộn lên)
-    if (currentScroll > lastScrollTop) {
+    // LOGIC RESET KHI LÊN TRÊN CÙNG
+    if (currentScroll <= 10) {
+        revealElements.forEach(el => {
+            if (el.offsetTop > 500) { 
+                el.classList.remove('active');
+            } 
+        });
+    }
+
+    // LOGIC CHO NAVBAR
+    if (currentScroll > lastScrollTop && currentScroll > 100) {
         navbar.classList.add('header-hidden');
     } else {
         navbar.classList.remove('header-hidden');
     }
 
-    // 2. LOGIC CHO NÚT SCROLL UP (Hiện khi cuộn qua 300px)
+    // LOGIC CHO NÚT SCROLL UP 
     if (btnElement) {
         if (currentScroll > 300) {
             btnElement.classList.add('show');
@@ -22,27 +31,23 @@ window.addEventListener('scroll', function() {
         }
     }
 
-    // Cập nhật vị trí cuộn cuối cùng
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 }, { passive: true });
 
-//===================HIỆU ỨNG NỔI ẢNH===================
+//=================== HIỆU ỨNG NỔI ẢNH (Scroll Reveal) ===================
 const options = {
-  threshold: 0.1 
+    threshold: 0.01
 };
 
-// Tạo hàm xử lý khi phần tử giao thoa với khung nhìn
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      // Thêm class 'active' để chạy animation
-      entry.target.classList.add('active');
-      // Nếu bạn chỉ muốn hiện 1 lần rồi thôi, hãy ngừng theo dõi:
-      observer.unobserve(entry.target);
-    }
-  });
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        } else {
+            entry.target.classList.remove('active');
+        }
+    });
 }, options);
 
-// Chọn tất cả các phần tử có class 'reveal' và bắt đầu theo dõi
-const elements = document.querySelectorAll('.reveal');
-elements.forEach(el => observer.observe(el));
+// Kích hoạt theo dõi
+revealElements.forEach(el => observer.observe(el));
