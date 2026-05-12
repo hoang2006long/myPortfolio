@@ -38,6 +38,11 @@ body{
     background: rgba(255,255,255,0.9);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: top 0.4s;
+}
+
+.header-hidden {
+    top: -80px;
 }
 
 .nav{
@@ -256,18 +261,28 @@ body{
 }
 
 
-.aboutMe_img img:hover {
-     opacity: 1;
-     cursor: pointer;
+.aboutMe_img {
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    opacity: 0.9;
+    margin-right: 20px;
+    width: 300px;
+   height: 400px;
 }
 
 .aboutMe_img img{
-    width: 320px;
-    border-radius: 25px;
-    object-fit: cover;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-    opacity: 0.9;
-    margin-right: 20px;
+    width: 300px;
+   height: 400px;
+   object-fit: cover;
+   transition: 0.4s;
+   transform: scale(1.1);
+}
+
+.aboutMe_img:hover img {
+    transform: scale(1.2);
+    opacity: 1;
+    cursor: pointer;
 }
 
 .aboutMe_content{
@@ -304,6 +319,7 @@ body{
 
 .aboutMe_sectionElement p{
     margin-bottom: 10px;
+    margin-top: 10px;
     font-weight: 600;
     color: #6679b7;
     height: 50px;
@@ -316,6 +332,7 @@ body{
     position: relative;
     overflow: hidden;
     border-radius: 20px;
+    text-decoration: none;
 }
 
 .transcript-download img{
@@ -323,6 +340,7 @@ body{
     height: 250px;
     object-fit: cover;
     transition: 0.4s;
+    border-radius: 20px;
 }
 
 .transcript-download:hover img{
@@ -342,6 +360,10 @@ body{
     transition: 0.3s;
     text-align: center;
     padding: 10px;
+}
+
+.aboutMe_button_phone {
+    display: none;
 }
 
 .aboutMe_sectionElement:hover .overlay{
@@ -421,6 +443,33 @@ body{
     font-size: 1.4rem;
 }
 
+.scroll_top_Btn {
+    width: 50px;
+    height: 50px;
+    color: white;
+    border-radius: 100px;
+    text-decoration: 0;
+    background-color: #2563eb;
+    z-index: 1000;
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    align-items: center;     
+    justify-content: center;
+    font-size: 20px;
+    transition: bottom 0.4;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 1100px){
 
@@ -458,6 +507,16 @@ body{
         text-align: center;
     }
 
+    .aboutMe_button_phone {
+        display: block;
+    }
+    .aboutMe_img {
+        width: 260px;
+        height: 360px;
+        margin-bottom: 20px;
+        align-self: center;
+    }
+
     .aboutMe_img img{
         width: 260px;
         margin-bottom: 30px;
@@ -465,11 +524,59 @@ body{
 
     .aboutMe_section{
         justify-content: center;
+    } 
+    .aboutMe_sectionElement p {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .transcript-download img {
+        border-radius: 20px;
+        height: 150px;
+    }
+
+    .overlay {
+        display: none;
+    }
+    .project_button{
+        margin: 5px !important;
+    }
+
+    .contact h2 {
+        font-size: 3rem;
     }
 
    .contactElement a {
     width: 350px;
    }
 
+   .contactElement a i {
+        width: 30px;
+        height: 30px; 
+        font-size: 2rem;
+    }
+
+    .contactElement a span {
+        font-size: 1.2rem;
+    }
+
+    .scroll_top_Btn {
+        transform: scale(0.7);
+    }
    
 }
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
