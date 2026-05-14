@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <title>Hoàng Long | Portfolio</title>
 </head>
+
 <body>
     <div class="container">
         <!-- Header & Navigation -->
@@ -16,7 +18,7 @@
             <div class="nav">
                 <a href="#home" class="nav_item active">Home</a>
                 <a href="#skill" class="nav_item">Skill</a>
-                <a href="#project" class="nav_item">Project</a>
+                <a href="#projects" class="nav_item">Projects</a>
                 <a href="#about" class="nav_item">About me</a>
                 <a href="#contact" class="nav_item">Contact</a>
             </div>
@@ -24,7 +26,7 @@
 
         <!-- Main Body -->
         <div class="body">
-            
+
             <!-- Hero Banner Section -->
             <div id="home" class="heroBanner">
                 <h1 class="reveal">Xin chào, tôi là <span class="highlight">Hoàng Long</span></h1>
@@ -45,7 +47,8 @@
                         </div>
                     </div>
                     <div class="mySkill_body_element">
-                        <div class="skillElement_title"><i class="fa-solid fa-laptop-code"></i> Application Software</div>
+                        <div class="skillElement_title"><i class="fa-solid fa-laptop-code"></i> Application Software
+                        </div>
                         <div class="skillElement_body">
                             <ul>
                                 <li>Kicad</li>
@@ -54,7 +57,8 @@
                         </div>
                     </div>
                     <div class="mySkill_body_element">
-                        <div class="skillElement_title"><i class="fa-solid fa-computer"></i>Communication Protocols</div>
+                        <div class="skillElement_title"><i class="fa-solid fa-computer"></i>Communication Protocols
+                        </div>
                         <div class="skillElement_body">
                             <ul>
                                 <li>UART</li>
@@ -67,85 +71,88 @@
             </div>
 
             <!-- Projects Section -->
-            <div id="project" class="myProjects reveal">
-                     <a href="https://google.com" style="text-decoration: none; color: inherit;">
-                        <div class="myProjects_title">My Projects</div>
-                        <div class="myProjects_body">
-                            <!-- Ví dụ 1 Project -->
-                            <div class="project reveal">
-                                <div class="project_img">
-                                    <!-- Chèn ảnh demo project vào đây -->
-                                </div>
-                                <div class="project_content">
-                                    <h3>Hệ thống điều khiển nhúng</h3>
-                                    <p>Mô tả ngắn gọn về dự án của bạn, công nghệ sử dụng.</p>
-                                </div>
-                                <div class="project_button">
-                                    Xem chi tiết
-                                </div>
+            <div id="projects" class="myProjects reveal">
+                <div class="myProjects_title">My Projects</div>
+                <div class="myProjects_body">
+                    <div class="project">
+                        <a href="https://google.com" style="text-decoration: none; color: inherit;">
+                            <div class="project_img">
+                                <!-- Chèn ảnh demo project vào đây -->
                             </div>
-                        </div>
-                    </a>
-                 </div>
+                            <div class="project_content">
+                                <h3>Hệ thống điều khiển nhúng</h3>
+                                <p>Mô tả ngắn gọn về dự án của bạn, công nghệ sử dụng.</p>
+                            </div>
+                            <div class="button">
+                                Xem chi tiết
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
             <!-- About Me Section -->
             <div id="about" class="aboutMe reveal">
                 <div class="aboutMe_title">
-                    <h2>About me</h2>
-        <p>Tôi là một lập trình viên đam mê công nghệ nhúng và phát triển phần mềm...</p>
+                    About me
+                    <p>Tôi là một lập trình viên đam mê công nghệ nhúng và phát triển phần mềm...</p>
                 </div>
-    <div class="aboutMe_content">
-        <div class="aboutMe_img reveal">
-        <img src="./aboutme_img/img1.jpg" alt="Hoàng Long - Portrait">
-    </div>
-        <div class="aboutMe_section reveal">
-            
-                <div class="aboutMe_sectionElement">
-                    <p>Bảng điểm học tập</p>
-                    <a href="./aboutme_img/Bảng điểm Trương Lê Hoàng Long.pdf" download="./aboutme_img/Bảng điểm Trương Lê Hoàng Long.pdf" class="transcript-download">
-                        <img src="./aboutme_img/GPA.jpg" alt="Download Transcript" title="Click để tải bảng điểm">
-                        <div class="overlay">
-                            <i class="fa-solid fa-download"></i> Tải xuống
+                <div class="aboutMe_content">
+                    <div class="aboutMe_img reveal">
+                        <img src="./aboutme_img/img1.jpg" alt="Hoàng Long - Portrait">
+                    </div>
+                    <div class="aboutMe_section reveal">
+                        <div class="aboutMe_sectionElement">
+                            <p>Bảng điểm học tập</p>
+                            <a href="./aboutme_img/Bảng điểm Trương Lê Hoàng Long.pdf"
+                                download="./aboutme_img/Bảng điểm Trương Lê Hoàng Long.pdf" class="transcript-download">
+                                <img src="./aboutme_img/GPA.jpg">
+                                <div class="overlay">
+                                    <i class="fa-solid fa-download"></i> Tải xuống
+                                </div>
+                                <div class="aboutMe_button_phone button">
+                                    Xem chi tiết
+                                </div>
+                            </a>
                         </div>
-                        <div class="aboutMe_button_phone project_button">
-                            Xem chi tiết
-                        </div>
-                    </a>
-                </div>
 
-                <div class="aboutMe_sectionElement">
-                    <p>Giấy chứng nhận Olympic cấp trường</p>
-                    <a href="./aboutme_img/Giấy khen Olympic Tiếng Anh.jpg" download="./aboutme_img/Giấy khen Olympic Tiếng Anh.jpg" class="transcript-download">
-                        <img src="./aboutme_img/Giấy khen Olympic Tiếng Anh.jpg" alt="Download Transcript" title="Click để tải bảng điểm">
-                        <div class="overlay">
-                            <i class="fa-solid fa-download"></i> Tải xuống 
+                        <div class="aboutMe_sectionElement">
+                            <p>Giấy chứng nhận Olympic cấp trường</p>
+                            <a href="./aboutme_img/Giấy khen Olympic Tiếng Anh.jpg"
+                                download="./aboutme_img/Giấy khen Olympic Tiếng Anh.jpg" class="transcript-download">
+                                <img src="./aboutme_img/Giấy khen Olympic Tiếng Anh.jpg" alt="Download Transcript"
+                                    title="Click để tải bảng điểm">
+                                <div class="overlay">
+                                    <i class="fa-solid fa-download"></i> Tải xuống
+                                </div>
+                                <div class="aboutMe_button_phone button">
+                                    Xem chi tiết
+                                </div>
+                            </a>
                         </div>
-                        <div class="aboutMe_button_phone project_button">
-                            Xem chi tiết
-                        </div>
-                    </a>
-                </div>
 
-                <div class="aboutMe_sectionElement">
-                    <p>Chứng chỉ MOS excel</p>
-                    <a href="./aboutme_img/Excel Associate.pdf" download="./aboutme_img/Excel Associate.pdf" class="transcript-download">
-                        <img src="./aboutme_img/Excel.jpg" alt="Download Transcript" title="Click để tải bảng điểm">
-                        <div class="overlay">
-                            <i class="fa-solid fa-download"></i> Tải xuống 
+                        <div class="aboutMe_sectionElement">
+                            <p>Chứng chỉ MOS excel</p>
+                            <a href="./aboutme_img/Excel Associate.pdf" download="./aboutme_img/Excel Associate.pdf"
+                                class="transcript-download">
+                                <img src="./aboutme_img/Excel.jpg" alt="Download Transcript"
+                                    title="Click để tải bảng điểm">
+                                <div class="overlay">
+                                    <i class="fa-solid fa-download"></i> Tải xuống
+                                </div>
+                                <div class="aboutMe_button_phone button">
+                                    Xem chi tiết
+                                </div>
+                            </a>
                         </div>
-                        <div class="aboutMe_button_phone project_button">
-                            Xem chi tiết
-                        </div>
-                    </a>
+
+                    </div>
                 </div>
-            
-        </div>
-    </div>
-</div>
+            </div>
 
             <!-- Contact Section -->
             <div id="contact" class="contact">
-                <h2>Contact me</h2>
+                <div class="contact_title">Contact me</div>
                 <div class="contactElement">
                     <a href="javascript:void(0)">
                         <i class="fa-solid fa-envelope"></i></i>
@@ -155,17 +162,17 @@
                     <a href="javascript:void(0)">
                         <i class="fa-solid fa-mobile"></i>
                         <span>+84 838 171 006</span>
-                    </a> 
+                    </a>
 
                     <a href="https://maps.app.goo.gl/aQJNPUCHp3e1uTWA8">
-                            <i class="fa-solid fa-location-arrow"></i>
-                            <span class="">Ký túc xá Khu B Đông Hòa, Bình Dương</span>
+                        <i class="fa-solid fa-location-arrow"></i>
+                        <span class="">Ký túc xá Khu B Đông Hòa, Bình Dương</span>
                     </a>
 
                     <a href="https://github.com/hoang2006long">
                         <i class="fa-brands fa-github"></i>
                         <span class="">https://github.com/hoang2006long</span>
-                    </i></a>
+                        </i></a>
                 </div>
             </div>
         </div>
@@ -185,4 +192,5 @@
     <!-- Script file -->
     <script src="main.js"></script>
 </body>
+
 </html>

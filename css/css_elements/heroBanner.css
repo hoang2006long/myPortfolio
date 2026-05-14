@@ -1,0 +1,24 @@
+.heroBanner{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg,#dbeafe,#eff6ff,#f0f9ff);
+    padding: 20px;
+}
+
+.heroBanner h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+.heroBanner h2 {
+    margin-top: 25px;
+    font-size: 2rem;
+}
+
+.highlight{
+    color: #2563eb;
+}

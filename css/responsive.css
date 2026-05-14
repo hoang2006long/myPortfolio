@@ -1,0 +1,90 @@
+@media screen and (max-width: 1100px){
+
+    html {
+    font-size: 55%; 
+  }
+
+    .nav{
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+
+    #skill,
+    .myProjects{
+        height: auto;
+    }
+
+    .myProjects_title {
+        margin-top: 20px;
+    }
+
+    .project {
+        width: 300px;
+        margin-bottom: 25px;
+    }
+
+    .aboutMe,
+    .aboutMe_content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutMe_button_phone {
+        display: block;
+    }
+    .aboutMe_img {
+        width: 260px;
+        height: 360px;
+        margin-bottom: 20px;
+        align-self: center;
+    }
+
+    .aboutMe_img img{
+        width: 260px;
+        margin-bottom: 30px;
+    }
+
+    .aboutMe_section{
+        justify-content: center;
+    } 
+    .aboutMe_sectionElement p {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .transcript-download img {
+        border-radius: 20px;
+        height: 150px;
+    }
+
+    .overlay {
+        display: none;
+    }
+    .project_button{
+        margin: 5px !important;
+    }
+
+    .contact h2 {
+        font-size: 3rem;
+    }
+
+   .contactElement a {
+        width: 28rem;
+    }
+
+   .contactElement a i {
+        width: 30px;
+        height: 30px; 
+        font-size: 2rem;
+    }
+
+    .contactElement a span {
+        font-size: 1.2rem;
+    }
+
+    .scroll_top_Btn {
+        transform: scale(0.7);
+    }
+   
+}
