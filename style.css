@@ -10,8 +10,9 @@
 @import "./css/css_elements/mySkill.css";
 @import "./css/css_elements/footer.css";
 
-/* Css elements file */
+/* Css components file */
 @import "./css/css_components/button.css";
+@import "./css/css_components/layer.css";
 
 /* Css action file */
 @import "./css/action.css";
@@ -36,6 +37,7 @@ body{
     background: #f4f7fb;
     color: #1e293b;
     line-height: 1.6;
+    
 }
 
 /* Container */
@@ -48,8 +50,7 @@ body{
 .myProjects,
 .aboutMe,
 .contact{
-    width: 100vw;
-    margin: auto;
+    width: 100%;
     padding: 60px 20px;
 }
 
