@@ -106,6 +106,23 @@
 }
 
 /* =============Responsive for short image=============== */
+@media (max-height: 575px) and (max-width: 1000px) {
+    .layerContent_img .img_short,
+    .layerContent_img .img_long {
+        height: auto;
+        min-height: 300px;
+        max-height: 60vh;
+    }
+}
+
+@media (max-height: 574px) {
+    .layerContent_img .img_short,
+    .layerContent_img .img_long {
+        height: auto;
+        min-height: 60vh;
+    }
+}
+
 @media (min-width: 739px) and (max-width: 1000px) {
     .layerContent_img .img_short {
         height: 450px;
