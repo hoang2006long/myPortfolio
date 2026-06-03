@@ -24,9 +24,11 @@ closeBtns.forEach(button => {
     const parentLayer = button.closest('.overlay-layer');
 
     if (parentLayer) {
-      var iframe = document.getElementById('youtubeVideo_1');
-      var videoSrc = iframe.src;
-      iframe.src = videoSrc;
+      const allIframes = parentLayer.querySelectorAll('.youtubeVideo');
+      allIframes.forEach(iframe => {
+        const videoSrc = iframe.src;
+        iframe.src = videoSrc; // Reset src để dừng video
+      });
       parentLayer.classList.remove('active'); // Xóa class để ẩn layer
     }
   });
@@ -39,11 +41,13 @@ allLayers.forEach(layer => {
     if (event.target === layer) {
       layer.classList.remove('active');
       if (allLayers) {
-      var iframe = document.getElementById('youtubeVideo_1');
-      var videoSrc = iframe.src;
-      iframe.src = videoSrc;
-      parentLayer.classList.remove('active'); // Xóa class để ẩn layer
-    }
+        var allIframes = document.querySelectorAll('.youtubeVideo');
+        allIframes.forEach(iframe => {
+          var videoSrc = iframe.src;
+          iframe.src = videoSrc; // Reset src để dừng video
+        });
+        parentLayer.classList.remove('active'); // Xóa class để ẩn layer
+      }
     }
   });
 });
