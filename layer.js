@@ -38,6 +38,12 @@ allLayers.forEach(layer => {
     // Nếu người dùng click trúng phần nền đen (chứ không phải khung màu trắng)
     if (event.target === layer) {
       layer.classList.remove('active');
+      if (allLayers) {
+      var iframe = document.getElementById('youtubeVideo_1');
+      var videoSrc = iframe.src;
+      iframe.src = videoSrc;
+      parentLayer.classList.remove('active'); // Xóa class để ẩn layer
+    }
     }
   });
 });

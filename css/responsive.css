@@ -115,4 +115,8 @@
     
     font-size: 1.5rem;
     }
+
+    .layerContent_img .youtubeVideo {
+        height: 250px;
+    }
 }
