@@ -22,6 +22,7 @@
     max-height: 90%;
     height: auto;
     display: flex;
+    overflow: auto;
 }
 
 .layerContent {
@@ -46,6 +47,10 @@
     width: 95%;
     height: 95%;
     margin-bottom: 20px;
+}
+
+.layerContent_img .youtubeVideo {
+    margin-bottom: 2rem;
 }
 
 .layerContent_img iframe {

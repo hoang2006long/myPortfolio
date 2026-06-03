@@ -34,6 +34,11 @@
     background: linear-gradient(135deg,#93c5fd,#bfdbfe);
 }
 
+.project_img img{
+     height: 220px;
+     width: 100%;
+}
+
 .project_content{
     padding: 25px;
     font-size: 1.6rem;
