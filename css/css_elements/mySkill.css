@@ -1,6 +1,7 @@
 .mySkill {
     height: 100vh;
     align-content: center;
+    background: linear-gradient(135deg,#dbeafe,#eff6ff,#f0f9ff);
 }
 .mySkill_body{
     display: flex;
