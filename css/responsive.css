@@ -1,10 +1,10 @@
-@media screen and (max-width: 1220px){
+@media screen and (max-width: 1220px) {
 
     html {
-    font-size: 55%; 
-  }
+        font-size: 55%;
+    }
 
-    .nav{
+    .nav {
         gap: 18px;
         flex-wrap: wrap;
     }
@@ -14,7 +14,7 @@
         padding: 0;
     }
 
-    .heroBanner h1{
+    .heroBanner h1 {
         font-size: 4.5rem;
     }
 
@@ -24,7 +24,7 @@
 
 
     #skill,
-    .myProjects{
+    .myProjects {
         height: auto;
     }
 
@@ -33,7 +33,7 @@
     }
 
     .aboutMe,
-    .aboutMe_content{
+    .aboutMe_content {
         flex-direction: column;
         text-align: center;
     }
@@ -47,14 +47,15 @@
         align-self: center;
     }
 
-    .aboutMe_img img{
+    .aboutMe_img img {
         width: 260px;
         margin-bottom: 30px;
     }
 
-    .aboutMe_section{
+    .aboutMe_section {
         justify-content: center;
-    } 
+    }
+
     .aboutMe_sectionElement p {
         margin-bottom: 5px;
         margin-top: 5px;
@@ -65,7 +66,7 @@
         height: 150px;
     }
 
-    .project_button{
+    .project_button {
         margin: 5px !important;
     }
 
@@ -73,13 +74,13 @@
         font-size: 3rem;
     }
 
-   .contactElement a {
+    .contactElement a {
         width: 28rem;
     }
 
-   .contactElement a i {
+    .contactElement a i {
         width: 30px;
-        height: 30px; 
+        height: 30px;
         font-size: 2rem;
     }
 
@@ -96,7 +97,7 @@
     }
 }
 
-@media screen and (max-width: 738px){
+@media screen and (max-width: 738px) {
     .project {
         width: 300px;
         margin-bottom: 25px;
@@ -107,16 +108,22 @@
     }
 
     .project_content h3 {
-    
-    font-size: 1.8rem;
+
+        font-size: 1.8rem;
     }
 
     .project_content p {
-    
-    font-size: 1.5rem;
+
+        font-size: 1.5rem;
     }
 
     .layerContent_img .youtubeVideo {
         height: 250px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .nav {
+        gap: 16px;
     }
 }
