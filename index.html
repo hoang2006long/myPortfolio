@@ -113,11 +113,11 @@
                         </div>
                         <div class="skillElement_body">
                             <ul>
-                                <li>KiCad | Proteus</li>
+                                <li>KiCad | Proteus | Altium</li>
                                 <li>AutoCAD</li>
                                 <li>VS Code</li>
                                 <li>Arduino IDE</li>
-                                <li>TinkerCad</li>
+                                <li>TinkerCad | Wokwi</li>
                             </ul>
                         </div>
                     </div>
@@ -140,7 +140,7 @@
             <div id="projects" class="myProjects reveal">
                 <div class="myProjects_title">My Projects</div>
                 <div class="myProjects_body">
-                    <div class="project open-btn" data-target="layerProject_1">
+                    <div class="project">
                         <div class="project_img">
                             <img src="./assets/Xe robot.jpg" alt="" class="">
                         </div>
@@ -148,8 +148,34 @@
                             <h3>Bluetooth Remote Control Car</h3>
                             <p>Handmade JDY-31 Controlled ATmega328P & L293D Board</p>
                         </div>
-                        <div class="button">
-                            View Details
+                        <div class="chips">
+                            <span class="chip">
+                                <i class="fa-brands fa-bluetooth-b"></i>
+                                JDY-31
+                            </span>
+                            <span class="chip">ATmega328P</span>
+                            <span class="chip">L293D</span>
+                        </div>
+                        <div class="line"></div>
+                        <div class="buttons">
+                            <div class="button open-btn" data-target="layerProject_demo">
+                                <div class="">
+                                    <i class="fa-solid fa-play"></i>
+                                    Demo
+                                </div>
+                            </div>
+                            <div class="button open-btn" data-target="layerProject_process">
+                                <div class="">
+                                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                                    Process
+                                </div>
+                            </div>
+                            <div class="button open-btn" data-target="layerProject_report">
+                                <div class="">
+                                    <i class="fa-solid fa-file"></i>
+                                    Report
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -195,28 +221,62 @@
         </div>
 
         <!-- Layer -->
-        <div id="layerProject_1" class="overlay-layer">
+        <div id="layerProject_demo" class="overlay-layer">
             <div class="boxLayer">
                 <div class="button close-btn">
                     <i class="fa-solid fa-x"></i>
                 </div>
-
                 <div class="layerContent">
-                    <div class="layerContent_title">Bluetooth remote control car</div>
+                    <div class="layerContent_title">Video Demo</div>
                     <div class="layerContent_img">
                         <iframe id="youtubeVideo_1" class="youtubeVideo" width="100%" height="auto"
                             src="https://www.youtube.com/embed/XHLv8SolU0w?si=lRgDdi_oDTgJh_0W"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="layerProject_process" class="overlay-layer">
+            <div class="boxLayer">
+                <div class="button close-btn">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="layerContent">
+                    <div class="layerContent_title">Process video</div>
+                    <div class="layerContent_img">
                         <iframe id="youtubeVideo_2" class="youtubeVideo" width="100%" height="auto"
                             src="https://www.youtube.com/embed/IqTmcm6WngQ?si=DU4MqrOn0u7B2l6H"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="layerProject_report" class="overlay-layer">
+            <div class="boxLayer">
+                <div class="button close-btn">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="layerDetail button">
+                    <a target="_blank"
+                        href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://hoang2006long.github.io/myPortfolio/assets/B%C3%A1o%20c%C3%A1o%20k%C4%A9%20thu%E1%BA%ADt.pdf"
+                        download="Bao Cao Ky Thuat.pdf">
+                        <i class="fa-solid fa-download"></i>
+                        <span class="">View detail </span>
+                    </a>
+                </div>
+                <div class="layerContent">
+                    <div class="layerContent_title">Report</div>
+                    <div class="layerContent_img">
                         <iframe class="img_long"
                             src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://hoang2006long.github.io/myPortfolio/assets/B%C3%A1o%20c%C3%A1o%20k%C4%A9%20thu%E1%BA%ADt.pdf"
-                            title="Bảng điểm Trương Lê Hoàng Long" allowfullscreen webkitallowfullscreen>
+                            title="" allowfullscreen webkitallowfullscreen>
                         </iframe>
                         </iframe>
                     </div>
@@ -229,9 +289,15 @@
                 <div class="button close-btn">
                     <i class="fa-solid fa-x"></i>
                 </div>
-
+                <div class="layerDetail button">
+                    <a target="_blank"
+                        href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://hoang2006long.github.io/myPortfolio/assets/B%E1%BA%A3ng%20%C4%91i%E1%BB%83m%20Tr%C6%B0%C6%A1ng%20L%C3%AA%20Ho%C3%A0ng%20Long.pdf">
+                        <i class="fa-solid fa-download"></i>
+                        <span class="">View detail </span>
+                    </a>
+                </div>
                 <div class="layerContent">
-                    <div class="layerContent_title">Academic Transcript</div>
+                    <div class="layerContent_title">Transcript</div>
                     <div class="layerContent_img">
                         <iframe class="img_long"
                             src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://hoang2006long.github.io/myPortfolio/assets/B%E1%BA%A3ng%20%C4%91i%E1%BB%83m%20Tr%C6%B0%C6%A1ng%20L%C3%AA%20Ho%C3%A0ng%20Long.pdf"
@@ -248,9 +314,15 @@
                 <div class="button close-btn">
                     <i class="fa-solid fa-x"></i>
                 </div>
-
+                <div class="layerDetail button">
+                    <a target="_blank"
+                        href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://hoang2006long.github.io/myPortfolio/assets/Gi%E1%BA%A5y%20khen%20Olympic%20Ti%E1%BA%BFng%20Anh.pdf">
+                        <i class="fa-solid fa-download"></i>
+                        <span class="">View detail </span>
+                    </a>
+                </div>
                 <div class="layerContent">
-                    <div class="layerContent_title">Certificate of English Olympic</div>
+                    <div class="layerContent_title">Certificate</div>
                     <div class="layerContent_img">
                         <iframe class="img_short"
                             src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://hoang2006long.github.io/myPortfolio/assets/Gi%E1%BA%A5y%20khen%20Olympic%20Ti%E1%BA%BFng%20Anh.pdf"
@@ -266,9 +338,15 @@
                 <div class="button close-btn">
                     <i class="fa-solid fa-x"></i>
                 </div>
-
+                <div class="layerDetail button">
+                    <a target="_blank"
+                        href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://hoang2006long.github.io/myPortfolio/assets/Excel%20Associate.pdf">
+                        <i class="fa-solid fa-download"></i>
+                        <span class="">View detail </span>
+                    </a>
+                </div>
                 <div class="layerContent">
-                    <div class="layerContent_title">Microsoft Office Specialist</div>
+                    <div class="layerContent_title">MOS</div>
                     <div class="layerContent_img">
                         <iframe class="img_short"
                             src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://hoang2006long.github.io/myPortfolio/assets/Excel%20Associate.pdf"
